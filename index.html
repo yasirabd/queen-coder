@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nurus Sunnah Queen Coder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brave-pink': '#F784C5',
+              'hero-green': '#1B602F',
+              'resistance-blue': '#000072',
+              'soft-pink': '#FCACCC',
+              'cactus-beige': '#675722',
+            },
+            fontFamily: {
+              sans: ['Quicksand', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fff5f9 0%, #fef2f2 100%);
+        min-height: 100vh;
+      }
+      .sparkle-bg {
+        background-image: radial-gradient(circle at 2px 2px, #F784C5 0.3px, transparent 0);
+        background-size: 40px 40px;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(12px);
+        border: 2px solid rgba(247, 132, 197, 0.2);
+      }
+      .glow-pink {
+        box-shadow: 0 0 20px rgba(247, 132, 197, 0.3);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #F784C5;
+        border-radius: 10px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0"
+  }
+}
+</script>
+</head>
+  <body class="sparkle-bg">
+    <div id="root"></div>
+  </body>
+</html>
